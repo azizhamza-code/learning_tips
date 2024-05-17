@@ -12,3 +12,8 @@ def map_filter():
 
 print(timeit.timeit(listcomp, number=1000000))
 print(timeit.timeit(map_filter, number=1000000))
+
+
+# Output:
+# 0.28273833310231566 
+# 0.4844540832564235
