@@ -1,0 +1,1 @@
+# tuple suport the same methods as list that do not modify the tuple 'except for the  reverdes() method'

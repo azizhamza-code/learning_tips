@@ -7,7 +7,3 @@ class Solution:
                 a, b = b, a % b
             return a
         return str1[:gcd(len(str1), len(str2))]
-
-
-                
-
