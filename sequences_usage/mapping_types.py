@@ -1,14 +1,17 @@
 # all mapping types in python use dict in the background
 # so they all share the fact that keys must be hashable
 
-# tip
-# my_dict.setdefault(key, []).append(new_value)
+my_dict = {}
+key = 'my_key'
+new_value = 'my_value'
+my_dict.setdefault(key, []).append(new_value)
+
 
 # is equivalent to
 
-# if key not in my_dict:
-#     my_dict[key] = []
-# my_dict[key].append(new_value)
+if key not in my_dict:
+    my_dict[key] = []
+my_dict[key].append(new_value)
 
 # but the first one is more efficient
 # because it only does one lookup in the dictionary
